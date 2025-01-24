@@ -55,23 +55,26 @@
             this.AddTaskBtn.BackColor = System.Drawing.Color.Gold;
             this.AddTaskBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTaskBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddTaskBtn.Location = new System.Drawing.Point(332, 576);
+            this.AddTaskBtn.Location = new System.Drawing.Point(317, 572);
             this.AddTaskBtn.Name = "AddTaskBtn";
             this.AddTaskBtn.Size = new System.Drawing.Size(60, 55);
             this.AddTaskBtn.TabIndex = 3;
             this.AddTaskBtn.Text = "+";
             this.AddTaskBtn.UseVisualStyleBackColor = false;
+            this.AddTaskBtn.Click += new System.EventHandler(this.AddTaskBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(404, 667);
             this.Controls.Add(this.AddTaskBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.monthCalendar1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
