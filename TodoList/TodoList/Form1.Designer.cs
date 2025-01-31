@@ -31,7 +31,6 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.AddTaskBtn = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -56,7 +55,7 @@
             this.AddTaskBtn.BackColor = System.Drawing.Color.Gold;
             this.AddTaskBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTaskBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.AddTaskBtn.Location = new System.Drawing.Point(317, 572);
+            this.AddTaskBtn.Location = new System.Drawing.Point(311, 578);
             this.AddTaskBtn.Name = "AddTaskBtn";
             this.AddTaskBtn.Size = new System.Drawing.Size(60, 55);
             this.AddTaskBtn.TabIndex = 3;
@@ -64,32 +63,20 @@
             this.AddTaskBtn.UseVisualStyleBackColor = false;
             this.AddTaskBtn.Click += new System.EventHandler(this.AddTaskBtn_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBox1.Location = new System.Drawing.Point(242, 341);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 21);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(404, 667);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.AddTaskBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.monthCalendar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -98,7 +85,6 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button AddTaskBtn;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
