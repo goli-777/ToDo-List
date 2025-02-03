@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TodoList.Properties
+namespace ToDo.Properties
 {
 
 

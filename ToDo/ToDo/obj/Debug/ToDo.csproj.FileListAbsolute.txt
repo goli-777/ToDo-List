@@ -1,0 +1,10 @@
+D:\Todo\ToDo\ToDo\bin\Debug\ToDo.exe.config
+D:\Todo\ToDo\ToDo\bin\Debug\ToDo.exe
+D:\Todo\ToDo\ToDo\bin\Debug\ToDo.pdb
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.csprojAssemblyReference.cache
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.Form1.resources
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.Properties.Resources.resources
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.csproj.GenerateResource.cache
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.csproj.CoreCompileInputs.cache
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.exe
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.pdb
