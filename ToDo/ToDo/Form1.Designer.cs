@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button2 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(488, 54);
+            this.button1.Location = new System.Drawing.Point(385, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 52);
             this.button1.TabIndex = 0;
@@ -54,21 +54,17 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(29, 359);
+            this.listBox1.ItemHeight = 22;
+            this.listBox1.Location = new System.Drawing.Point(0, 367);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(418, 212);
+            this.listBox1.Size = new System.Drawing.Size(473, 244);
             this.listBox1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(29, 54);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(418, 42);
-            this.textBox1.TabIndex = 2;
             // 
             // contextMenuStrip1
             // 
@@ -82,29 +78,43 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(-1, 290);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(354, 42);
+            this.textBox1.TabIndex = 2;
+            // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(29, 127);
+            this.monthCalendar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 37);
+            this.monthCalendar1.MaxSelectionCount = 30;
             this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.ShowToday = false;
             this.monthCalendar1.TabIndex = 4;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(487, 127);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(358, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 69);
+            this.button2.Size = new System.Drawing.Size(103, 49);
             this.button2.TabIndex = 5;
             this.button2.Text = "Filter by date";
             this.button2.UseVisualStyleBackColor = false;
@@ -115,7 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(584, 611);
+            this.ClientSize = new System.Drawing.Size(473, 611);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox1);

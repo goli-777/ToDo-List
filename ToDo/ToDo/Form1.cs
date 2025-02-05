@@ -18,7 +18,9 @@ namespace ToDo
             public DateTime Date { get; set; }
             public override string ToString()
             {
-                return $"{Date.ToShortDateString()}: {Task}";
+               // return $"{Date.ToShortDateString()}: {Task}";
+                return Task;
+
             }
         }
         public Form1()
@@ -26,6 +28,16 @@ namespace ToDo
             InitializeComponent();
         }
         List<TaskItem> allTasks = new List<TaskItem>();
+        private void RefreshTaskList()
+        {
+            listBox1.Items.Clear();
+            DateTime selectedDate = monthCalendar1.SelectionStart.Date;
+            var tasksForDate = allTasks.Where(task => task.Date == selectedDate);
+            foreach (var task in tasksForDate)
+            {
+                listBox1.Items.Add(task);
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,33 +51,28 @@ namespace ToDo
                 listBox1.Items.Add(taskItem);
                 textBox1.Clear();
                 textBox1.Focus();
+                RefreshTaskList();
             }
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (listBox1.SelectedItem != null)
+            if (listBox1.SelectedItem is TaskItem selectedTask)
             {
-                string SelectedTask = listBox1.SelectedItem.ToString();
-                string[] trim = SelectedTask.Split(':');
-                if (trim.Length > 1)
-                {
-                    string text = trim[0].ToString();
-                    string date = trim[1].ToString();
-                    textBox1.Text = text;
-                    monthCalendar1.SetDate(DateTime.Parse(date));
-                    listBox1.Items.Remove(listBox1.SelectedItem);
-                }
+                textBox1.Text = selectedTask.Task;
+                monthCalendar1.SetDate(selectedTask.Date);
+                allTasks.Remove(selectedTask);
+                RefreshTaskList();
             }
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null)
+            if (listBox1.SelectedItem is TaskItem selectedTask)
             {
                 listBox1.Items.Remove(listBox1.SelectedItem);
-                MessageBox.Show("task deleted successfully");
+                RefreshTaskList();
             }
         }
 
@@ -76,8 +83,19 @@ namespace ToDo
             foreach (var item in allTasks)
             {
                 if (item.Date == selectedDate)
+                {
                     listBox1.Items.Add(item);
+                }
             }
+        }
+
+
+
+ 
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            RefreshTaskList();
         }
     }
 }
