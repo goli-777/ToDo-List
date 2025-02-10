@@ -34,6 +34,10 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.workToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,7 +48,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(385, 285);
+            this.button1.Location = new System.Drawing.Point(372, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(59, 52);
             this.button1.TabIndex = 0;
@@ -61,9 +65,9 @@
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 22;
-            this.listBox1.Location = new System.Drawing.Point(0, 367);
+            this.listBox1.Location = new System.Drawing.Point(0, 345);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(473, 244);
+            this.listBox1.Size = new System.Drawing.Size(438, 266);
             this.listBox1.TabIndex = 1;
             // 
             // contextMenuStrip1
@@ -71,9 +75,10 @@
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editToolStripMenuItem,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.listToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 76);
             // 
             // editToolStripMenuItem
             // 
@@ -89,10 +94,39 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // listToolStripMenuItem1
+            // 
+            this.listToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.workToolStripMenuItem1,
+            this.personalToolStripMenuItem1,
+            this.schoolToolStripMenuItem1});
+            this.listToolStripMenuItem1.Name = "listToolStripMenuItem1";
+            this.listToolStripMenuItem1.Size = new System.Drawing.Size(122, 24);
+            this.listToolStripMenuItem1.Text = "List";
+            // 
+            // workToolStripMenuItem1
+            // 
+            this.workToolStripMenuItem1.Name = "workToolStripMenuItem1";
+            this.workToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.workToolStripMenuItem1.Text = "Work";
+            this.workToolStripMenuItem1.Click += new System.EventHandler(this.workToolStripMenuItem1_Click);
+            // 
+            // personalToolStripMenuItem1
+            // 
+            this.personalToolStripMenuItem1.Name = "personalToolStripMenuItem1";
+            this.personalToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.personalToolStripMenuItem1.Text = "Personal";
+            // 
+            // schoolToolStripMenuItem1
+            // 
+            this.schoolToolStripMenuItem1.Name = "schoolToolStripMenuItem1";
+            this.schoolToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.schoolToolStripMenuItem1.Text = "School";
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(-1, 290);
+            this.textBox1.Location = new System.Drawing.Point(-1, 284);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(354, 42);
@@ -101,7 +135,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(18, 37);
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 35);
             this.monthCalendar1.MaxSelectionCount = 30;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowToday = false;
@@ -112,11 +146,11 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(358, 195);
+            this.button2.Location = new System.Drawing.Point(345, 195);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 49);
+            this.button2.Size = new System.Drawing.Size(86, 49);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Filter by date";
+            this.button2.Text = "Show All";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -125,14 +159,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(473, 611);
+            this.ClientSize = new System.Drawing.Size(438, 611);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ToDo";
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,6 +183,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem listToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem workToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem personalToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem schoolToolStripMenuItem1;
     }
 }
 

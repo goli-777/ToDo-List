@@ -12,15 +12,15 @@ namespace ToDo
 {
     public partial class Form1 : Form
     {
+        public enum Lists { Work, Personal, School }
         public class TaskItem
         {
             public string Task { get; set; }
             public DateTime Date { get; set; }
+            public Lists lst;
             public override string ToString()
             {
-               // return $"{Date.ToShortDateString()}: {Task}";
-                return Task;
-
+               return Task;
             }
         }
         public Form1()
@@ -53,6 +53,8 @@ namespace ToDo
                 textBox1.Focus();
                 RefreshTaskList();
             }
+            else
+                MessageBox.Show("Task is empty or invalid!");
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,7 +73,7 @@ namespace ToDo
         {
             if (listBox1.SelectedItem is TaskItem selectedTask)
             {
-                listBox1.Items.Remove(listBox1.SelectedItem);
+                allTasks.Remove(selectedTask);
                 RefreshTaskList();
             }
         }
@@ -79,22 +81,22 @@ namespace ToDo
         private void button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            DateTime selectedDate = monthCalendar1.SelectionStart;
             foreach (var item in allTasks)
             {
-                if (item.Date == selectedDate)
-                {
-                    listBox1.Items.Add(item);
-                }
+                listBox1.Items.Add(item);
             }
         }
 
-
-
- 
-
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
+            RefreshTaskList();
+        }
+
+        private void workToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TaskItem selectedtask = (TaskItem)listBox1.SelectedItem;
+            string list = sender.ToString();
+            selectedtask.Task = $"{list} : {selectedtask.Task}";
             RefreshTaskList();
         }
     }
