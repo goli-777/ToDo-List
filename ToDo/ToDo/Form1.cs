@@ -99,5 +99,11 @@ namespace ToDo
             selectedtask.Task = $"{list} : {selectedtask.Task}";
             RefreshTaskList();
         }
+
+        private void timerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimerFrm frm = new TimerFrm();
+            frm.Show();
+        }
     }
 }
