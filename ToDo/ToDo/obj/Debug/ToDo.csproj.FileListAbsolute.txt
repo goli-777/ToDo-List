@@ -8,3 +8,4 @@ D:\Todo\ToDo\ToDo\obj\Debug\ToDo.csproj.GenerateResource.cache
 D:\Todo\ToDo\ToDo\obj\Debug\ToDo.csproj.CoreCompileInputs.cache
 D:\Todo\ToDo\ToDo\obj\Debug\ToDo.exe
 D:\Todo\ToDo\ToDo\obj\Debug\ToDo.pdb
+D:\Todo\ToDo\ToDo\obj\Debug\ToDo.TimerFrm.resources
