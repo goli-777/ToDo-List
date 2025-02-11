@@ -76,28 +76,31 @@
             // 
             this.lblHour.AutoSize = true;
             this.lblHour.Font = new System.Drawing.Font("French Script MT", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHour.Location = new System.Drawing.Point(147, 199);
+            this.lblHour.Location = new System.Drawing.Point(144, 199);
             this.lblHour.Name = "lblHour";
-            this.lblHour.Size = new System.Drawing.Size(0, 48);
+            this.lblHour.Size = new System.Drawing.Size(36, 48);
             this.lblHour.TabIndex = 3;
+            this.lblHour.Text = "0";
             // 
             // lblMinute
             // 
             this.lblMinute.AutoSize = true;
             this.lblMinute.Font = new System.Drawing.Font("French Script MT", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinute.Location = new System.Drawing.Point(268, 199);
+            this.lblMinute.Location = new System.Drawing.Point(255, 199);
             this.lblMinute.Name = "lblMinute";
-            this.lblMinute.Size = new System.Drawing.Size(0, 48);
+            this.lblMinute.Size = new System.Drawing.Size(36, 48);
             this.lblMinute.TabIndex = 4;
+            this.lblMinute.Text = "0";
             // 
             // lblSecond
             // 
             this.lblSecond.AutoSize = true;
             this.lblSecond.Font = new System.Drawing.Font("French Script MT", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecond.Location = new System.Drawing.Point(389, 199);
+            this.lblSecond.Location = new System.Drawing.Point(378, 199);
             this.lblSecond.Name = "lblSecond";
-            this.lblSecond.Size = new System.Drawing.Size(0, 48);
+            this.lblSecond.Size = new System.Drawing.Size(36, 48);
             this.lblSecond.TabIndex = 5;
+            this.lblSecond.Text = "0";
             // 
             // label2
             // 

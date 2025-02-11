@@ -66,12 +66,12 @@
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 22;
-            this.listBox1.Location = new System.Drawing.Point(0, 345);
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(0, 334);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(438, 266);
+            this.listBox1.Size = new System.Drawing.Size(438, 277);
             this.listBox1.TabIndex = 1;
             // 
             // contextMenuStrip1
@@ -111,21 +111,21 @@
             // workToolStripMenuItem1
             // 
             this.workToolStripMenuItem1.Name = "workToolStripMenuItem1";
-            this.workToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.workToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.workToolStripMenuItem1.Text = "Work";
             this.workToolStripMenuItem1.Click += new System.EventHandler(this.workToolStripMenuItem1_Click);
             // 
             // personalToolStripMenuItem1
             // 
             this.personalToolStripMenuItem1.Name = "personalToolStripMenuItem1";
-            this.personalToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.personalToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.personalToolStripMenuItem1.Text = "Personal";
             this.personalToolStripMenuItem1.Click += new System.EventHandler(this.workToolStripMenuItem1_Click);
             // 
             // schoolToolStripMenuItem1
             // 
             this.schoolToolStripMenuItem1.Name = "schoolToolStripMenuItem1";
-            this.schoolToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.schoolToolStripMenuItem1.Size = new System.Drawing.Size(147, 26);
             this.schoolToolStripMenuItem1.Text = "School";
             this.schoolToolStripMenuItem1.Click += new System.EventHandler(this.workToolStripMenuItem1_Click);
             // 
@@ -150,7 +150,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
+            this.button2.BackColor = System.Drawing.Color.Salmon;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(345, 201);
             this.button2.Name = "button2";
