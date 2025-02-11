@@ -20,11 +20,19 @@ namespace ToDo
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             if (!string.IsNullOrEmpty(textBox1.Text))
             {
                 int time = int.Parse(textBox1.Text);
-                minute = (time - 1);
-                timer1.Enabled = true;
+                if (time % 60 != 0)
+                {
+                    hour = time / 60;
+                    minute = (time % 60)-1;
+                }
+                else
+                    minute = (time - 1);
+
+               timer1.Enabled = true;
             }
             else
                 MessageBox.Show("You can't leave the time empty!");
